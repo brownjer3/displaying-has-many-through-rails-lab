@@ -1,0 +1,6 @@
+<h1>Patient Show Page</h1>
+
+<% @patient.appointments.each do |a| %>
+    <%= a.app_date %>
+    <%= link_to a.doctor_name, doctor_path(a.doctor) %>
+<% end %>
